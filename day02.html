@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //1.Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
+        const str1 = '30 Days Of JavaScript'
+        //2.Print the string on the browser console using console.log()
+        console.log(str1);
+        //3.Print the length of the string on the browser console using console.log()
+        console.log(str1.length);
+        //4.Change all the string characters to capital letters using toUpperCase() method
+        const UpperStr1 = str1.toUpperCase();
+        //5.Change all the string characters to lowercase letters using toLowerCase() method
+        const LowerStr1 = str1.toLowerCase();
+        //6.Cut (slice) out the first word of the string using substr() or substring() method
+        const firstWords1 = str1.substr(0, 2);
+        const firstWords2 = str1.substring(0, 2);
+        //substr与substring第一个参数都为开始取值的index，第二个参数substr为所取个数，substring为所取值的末尾index，且该值不取
+        //substr(): It takes two arguments, the starting index and number of characters to slice.
+        //substring(): It takes two arguments, the starting index and the stopping index but it doesn't include the character at the stopping index.
+        console.log(firstWords1, '/', firstWords2);
+        //7.Slice out the phrase Days Of JavaScript from 30 Days Of JavaScript.
+        const str7 = str1.substr(3, 18);
+        const str71 = str1.substring(3, 21);
+        console.log('7:', str7, '/', str71);
+        //8.Check if the string contains a word Script using includes() method
+        const str8 = str1.includes('Script');
+        console.log('8:', str8);
+        //9.Split the string into an array using split() method
+        const str9 = str1.split();
+        console.log('9:', str9);
+        //10.Split the string 30 Days Of JavaScript at the space using split() method
+        const str10 = str1.split(' ');
+        console.log('10:', str10);
+        //11.'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+        const str11 = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'.split(',');
+        console.log('11:', str11);
+        //12.Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
+        const str12 = str1.replace('JavaScript', 'Python');
+        console.log('12:', str12);
+        //13.What is character at index 15 in '30 Days Of JavaScript' string? Use charAt() method.
+        const str13 = str1.charAt(15);
+        console.log('13:', str13);
+        //14.What is the character code of J in '30 Days Of JavaScript' string using charCodeAt()
+        const str14 = str1.charCodeAt(str1.indexOf('J'));
+        console.log('14:', str14);
+        //15.Use indexOf to determine the position of the first occurrence of a in 30 Days Of JavaScript
+        const str15 = str1.indexOf('a');
+        console.log('15:', str15);
+        //16.Use lastIndexOf to determine the position of the last occurrence of a in 30 Days Of JavaScript.
+        const str16 = str1.lastIndexOf('a');
+        console.log('16:', str16);
+        //17.Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+        const str17 = 'You cannot end a sentence with because because because is a conjunction'.indexOf('because');
+        console.log('17:', str17);
+        //18.Use lastIndexOf to find the position of the last occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+        const str18 = 'You cannot end a sentence with because because because is a conjunction'.lastIndexOf('because');
+        console.log('18:', str18);
+        //19.Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+        const str19 = 'You cannot end a sentence with because because because is a conjunction'.search('because');
+        console.log('19:', str19);
+        //20.Use trim() to remove any trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
+        const str20 = ' 30 Days Of JavaScript '.trim();
+        console.log('20:', str20);
+        //21.Use startsWith() method with the string 30 Days Of JavaScript and make the result true
+        const str21 = str1.startsWith('30');
+        console.log('21:', str21);
+    </script>
+</body>
+
+</html>
